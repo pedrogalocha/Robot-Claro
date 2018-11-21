@@ -34,7 +34,7 @@ namespace ConsoleApp2
             Console.Clear();
 
 
-            string[] linhas =  File.ReadAllLines("\\\\172.21.0.6\\winover$\\PLANEJAMENTO\\55.CLARO FIXO\\04.Base Robo\\"+ robo_base +".csv");
+            string[] linhas =  File.ReadAllLines("\\Directorie\\"+ robo_base +".csv");
 
             ConsoleSpinner spinner = new ConsoleSpinner();
             spinner.Delay = 300;
@@ -64,7 +64,7 @@ namespace ConsoleApp2
                 Thread.Sleep(2000);
                 Boolean Closed;
                 Console.WriteLine("Lendo dados do cliente");
-                TextWriter tw = new StreamWriter("\\\\172.21.0.6\\winover$\\PLANEJAMENTO\\55.CLARO FIXO\\05.Base Robo Tratado\\" + robo_saida +".txt", true);
+                TextWriter tw = new StreamWriter("\\Directorie\\" + robo_saida +".txt", true);
 
                 if (cpf.Length <= 11)
                 {
